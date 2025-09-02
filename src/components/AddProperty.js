@@ -22,7 +22,7 @@ const handleSubmit = async (e) => {
   e.preventDefault();
   try {
     console.log("Sending data:", formData); 
-    const res = await axios.post("http://localhost:5000/api/properties", {
+    const res = await axios.post("https://properties-backend-eight.vercel.app/api/properties", {
       ...formData,
       price: Number(formData.price),
     });
